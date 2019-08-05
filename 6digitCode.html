@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa:500&display=swap');
+    body {
+        font-family: 'Comfortaa', cursive;
+    }
+    #codeContainer {
+        background-color: #59FF00;
+        border: 2px solid #BBFF94;
+        display: flex;
+        height: 80px;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 500px;
+    }
+
+    #firstDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 45px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+
+    #secondDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 5px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+    #thirdDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 5px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+    #fourthDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 5px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+    #fifthDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 5px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+    #sixthDigit {
+        background-color: white;
+        border: 2px solid #EEEEEE;
+        height: 60px;
+        line-height: 65px;
+        margin-left: 5px;
+        margin-top: 8px;
+        text-align: center;
+        width: 60px;
+    }
+
+    #btn {
+        background-color: #FF002B;
+        border: 2px solid #FF3758;
+        font-size: 25px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+        line-height: 40px;
+        text-align: center;
+        width: 110px;
+    }
+    #btn:active {
+        border: 2px solid #4B4142;
+    }
+    .title {
+        
+        text-align:center;
+    }
+    
+    article {
+       
+        margin: 0 auto;
+        width: 500px;
+    }
+    p {
+        text-align: justify;
+    }
+    
+    </style>
+</head>
+<body>
+    <section>
+            <h1 class="title">6-Digit Code Generator</h1>
+        <article>
+            <p>Welcome to the 6-Digit Code Generator. If your looking to generate a 6 digit code to lock you Iphone or device 
+            scroll over to the click button and click it to generate a random code for you. Remember, having a 6 digit code means
+            you have 1 million possibilites to play with when choosing just one code. 
+            </p>
+        </article>
+    </section>
+
+    <div id="codeContainer">
+        <div id="firstDigit"></div>
+        <div id="secondDigit"></div>
+        <div id="thirdDigit"></div>
+        <div id="fourthDigit"></div>
+        <div id="fifthDigit"></div>
+        <div id="sixthDigit"></div>
+    </div>
+    <div id=buttonContainer> 
+        <div id="btn">Click</div>
+
+
+    </div>
+
+    <script>
+        var num1 = document.getElementById("firstDigit");
+        var num2 = document.getElementById("secondDigit");
+        var num3 = document.getElementById("thirdDigit");
+        var num4 = document.getElementById("fourthDigit");
+        var num5 = document.getElementById("fifthDigit");
+        var num6 = document.getElementById("sixthDigit");
+        var btn = document.getElementById("btn")
+
+        btn.addEventListener('click', function () {
+            let randNum1 = Math.floor(Math.random()*10);
+            console.log(randNum1);
+            const digitOne = num1.innerHTML = randNum1;
+            let randNum2 = Math.floor(Math.random()*10);
+            console.log(randNum2);
+            const digitTwo = num2.innerHTML = randNum2;
+            let randNum3 = Math.floor(Math.random()*10);
+            console.log(randNum2);
+            const digitThree = num3.innerHTML = randNum3;
+            let randNum4 = Math.floor(Math.random()*10);
+            console.log(randNum4);
+            const digitFour = num4.innerHTML = randNum4;
+            let randNum5 = Math.floor(Math.random()*10);
+            console.log(randNum5);
+            const digitFive = num5.innerHTML = randNum5;
+            let randNum6 = Math.floor(Math.random()*10);
+            console.log(randNum6);
+            const digitSix = num6.innerHTML = randNum6;
+            console.log(`${randNum1}${randNum2}${randNum3}${randNum4}${randNum5}${randNum6}`);
+        });
+    </script>
+</body>
+</html>
